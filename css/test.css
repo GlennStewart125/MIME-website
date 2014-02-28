@@ -117,7 +117,7 @@ color:blue;
 .innersubsub {
 	width: 960px;
 	margin: -15px auto;
-	position: relative;
+	position: absolute;
 	min-height: 50px;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
@@ -129,13 +129,23 @@ color:blue;
 
 .subMenu {
 	position: fixed;
-	top: 0px;
+	top: 0px;	
 	height: 60px;
 	z-index: 1000;
 	width: 100%;
 	max-width: 1140px;
 	min-width: 960px;
 	background: #0099CC;
+}
+
+.subsubMenu{
+	position: relative;
+	top: 0px;
+	left:100px;
+	height: 60px;
+	z-index: 1000;
+	width:960px;
+	background: #0286b2;	
 }
 
 .subMenu .inner {
@@ -159,16 +169,6 @@ color:blue;
 
 .end {
 	margin: 0;
-}
-
-.subsubMenu{
-	position: fixed;
-	top: 60px;
-	left:360px;
-	height: 60px;
-	z-index: 1000;
-	width:960px;
-	background: #0286b2;	
 }
 
 .subsubNavBtn {
