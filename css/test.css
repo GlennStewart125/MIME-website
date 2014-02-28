@@ -55,13 +55,12 @@ p {
 }
 
 .active {
-	background: #3B5323;
+	background: #0099CC;
 }
 .clear {
 	clear: both;
 }
 .wrap {
-		/*background:url(../images/bg.png) top left repeat-x;*/
 		width: 100%;
 		max-width: 1140px;
 		min-width: 960px;
@@ -97,12 +96,36 @@ p {
 	padding:30px 0;
 }
 
+.innersub {
+	width: 960px;
+	margin: -25px auto;
+	position: relative;
+	min-height: 50px;
+	padding:30px 0;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	padding:30px 0;
+}
 
-/* This is the selector i used for my menu, it needs to be set as position:absolute; */
+
+.innersubsub {
+	width: 960px;
+	margin: -15px auto;
+	position: relative;
+	min-height: 50px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	padding: -10px;
+	padding:30px 0;
+}
+
+
 .subMenu {
-	position: absolute;
-	top: 462px;
-	height: 50px;
+	position: fixed;
+	top: 0px;
+	height: 60px;
 	z-index: 1000;
 	width: 100%;
 	max-width: 1140px;
@@ -117,18 +140,15 @@ p {
 }
 
 
-
-
-
 .subNavBtn {
 	display: block;
-	height: 35px;
+	height: 25px;
 	width: 10%;
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
 	font-size: 14px;
-	padding: 15px 2% 0 2%;
+	padding: 25px 2% 0 2%;
 	text-align: center;
 	color: #fff;
 }
@@ -137,10 +157,31 @@ p {
 	margin: 0;
 }
 
+.subsubMenu{
+	position: fixed;
+	top: 60px;
+	left:360px;
+	height: 60px;
+	z-index: 1000;
+	width:960px;
+	background: #0286b2;	
+}
 
-/* SECTIONS */
+.subsubNavBtn {
+	display: block;
+	height: auto;
+	width: 10%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 2% 0 2%;
+	text-align: center;
+	color: #fff;
+}
+
 .sTop {
-	min-height: 630px;
+	min-height: 100px;
 	background:#e5e5e5;
 	color:#3d3d3d;
 	
