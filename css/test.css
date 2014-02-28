@@ -50,6 +50,7 @@ color:white;
 .blue-link{
 color:blue;
 }
+
 .menuBtn {
 	background: center center no-repeat transparent;
 	background: #000;
@@ -112,7 +113,6 @@ color:blue;
 	max-width: 1140px;
 	min-width: 960px;
 	background: #0099CC;
-	
 }
 
 .subMenu .inner {
