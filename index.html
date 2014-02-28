@@ -18,6 +18,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <script type="text/javascript" src="js/jquery.smint.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
 
 
 </head>
@@ -56,6 +57,8 @@
 			<br class="clear">
 		</div>
 
+		<div id="tekst">
+	
 		<div class="section s1">
 
 			<div class="inner">
@@ -68,7 +71,7 @@
 					mogelijk om andere karakter sets dan US-ASCII te gebruiken,
 					attachments die geen tekst waren eenvoudig mee te sturen, een
 					bericht te sturen met meerdere soorten media en header informatie
-					in non-ASCII te schrijven. Dit wordt gedaan door gebruik te maken
+					in non-ASCII te schrijven<a href="http://www.docstoc.com/docs/125926406/Multipurpose-Internet-Mail-Extensions-(-MIME-)-HEADER" class="tiny">[1]</a>). Dit wordt gedaan door gebruik te maken
 					van header fields en media types.</p>
 			</div>
 
@@ -79,13 +82,14 @@
 
 				<h2>Ontstaan van MIME</h2>
 				<p>Mail berichten waarin alleen tekst aanwezig was werd in RFC
-					822 al in 1982 gedefinieerd. Het succes van dit standaard was zo
+					822 al in 1982 gedefinieerd<a href="http://tools.ietf.org/html/rfc822" class="tiny">[2]</a>.
+					Het succes van dit standaard was zo
 					groot dat dit standaard, geheel of deels, is overgenomen, ver
 					buiten de grenzen van het internet en het internet SMTP vervoer (
-					toentertijd in RFC821 gedefinieerd en vandaag de dag in RFC5321).
+					toentertijd in RFC821 gedefinieerd en vandaag de dag in RFC5321<a href="http://tools.ietf.org/html/rfc5321" class="tiny">[3]</a>).
 					Door de grote hoeveelheid mensen die deze standaard gebruikte
 					werden de beperkingen die het bezat steeds restrictiever voor de
-					gebruiker.</p>
+					gebruiker.<a href="http://email.about.com/cs/standards/a/mime.htm" class="tiny">[4]</a></p>
 				<p>RFC 822 was bedoelt om een formaat van tekst bericht te
 					specificeren. Zelf al was het bericht een non-tekst bericht zoals
 					video berichten, audio berichten en afbeeldingen, kon de gebruiker
@@ -130,7 +134,8 @@
 
 				<h2>Header Fields</h2>
 				<p>MIME gebruikt een aantal header fields om de content van een
-					MIME geheel te beschrijven. Vier header types waren van groot
+					MIME geheel te beschrijven<a href="http://tools.ietf.org/html/rfc2045" class="tiny">[5]</a>. 
+					Vier header types waren van groot
 					belang:</p>
 				<ul>
 					<li>Een MIME-Version header field, hier wordt weergegeven
@@ -344,7 +349,7 @@
 				<p>Het Content-Type field wordt dus gebruikt om het soort data
 					te beschrijven door het bericht te voorzien van zowel een media
 					type als een subtype en het verstrekken van extra informatie voor
-					media typen waarbij dit vereist is. Nadat dit gespecificeerd is
+					media typen waarbij dit vereist is<a href="http://tools.ietf.org/html/rfc2046" class="tiny">[6]</a>. Nadat dit gespecificeerd is
 					wordt de rest van het header field gebruikt voor het plaatsen van
 					parameters. Zoals hierboven vermeldt is worden top-level media
 					typen gebruikt voor het aangeven van de algemene type data waardoor
@@ -449,7 +454,7 @@
 					zichtbaar of bruikbaar wordt voor de gebruiker nadat het verwerkt
 					is door de applicatie. Voorbeelden van applicaties waarvoor deze
 					media type gebruikt voor kan worden is bestandoverdracht,
-					spreadsheets, data voor mail gebaseerde agenda systemen. “Model”
+					spreadsheets, data voor mail gebaseerde agenda systemen. “Model”<a href="http://tools.ietf.org/html/rfc2077" class="tiny">[7]</a>
 					wordt gebruikt voor het versturen van modellen. Modellen zijn
 					multidimensionale structuren die uit één of meer objecten bestaan.
 					Als er meerdere objecten zijn dan is er één object die de
@@ -506,7 +511,7 @@
 					bericht, een text/enriched object en een afsluitende ingekapseld
 					text bericht in een non-ASCII karakter set. Het ingebedde multipart
 					bericht bevat twee objecten die moeten worden weergegeven in
-					parallel, een foto en een audio fragment.<br> <br> <br>
+					parallel, een foto en een audio fragment.<a href="http://tools.ietf.org/html/rfc2049#appendix-A " class="tiny">[8]</a><br> <br> <br>
 					MIME-Version: 1.0<br> From: Nathaniel Borenstein
 					<nsb @nsb.fv.com> <br>
 					To: Ned Freed <ned @innosoft.com> <br>
@@ -568,6 +573,17 @@
 		<div class="section s14">
 			<div class="inner">
 				<h2>Toekomst</h2>
+			
+				<p>Volgens één van de makers van MIME<a href="http://www.mimecast.co.za/Microsites/Campaigns/Keynote-presentation-the-evolution-of-attachements-and-its-influence-on-todays-technology" class="tiny">[9]</a>
+				zullen er in de toekomst geen grote veranderingen worden aangebracht aan MIME. 
+				Ook zei hij dat interessante nieuwe dingen die gedaan worden met nieuwe media types zullen gedaan worden gebruikmakend van MIME.
+				Ook nieuwe innovaties die aan het web worden gedaan zullen gedaan worden met MIME als bouwsteen. 
+				Want zoals hij ook duidelijk wilt maken: “People think of it as an e-mail thing but it’s also a building block of the web, 
+				when people think of it as a web thing, it’s also a building block for social networking”, alles gebruikt MIME. 
+				Zelfs de projecten de elk jaar opduiken om het e-mailen opnieuw uit te vinden maken gebruik van MIME. 
+				Dus is de kans dat MIME in de toekomst verdwijnt of minder relevant gaat worden erg klein. 
+				</p>
+
 			</div>
 
 		</div>
@@ -575,6 +591,10 @@
 		<div class="section s15">
 			<div class="inner">
 				<h2>conclusie</h2>
+				<p>MIME door zijn grote succes (wordt ongeveer een biljoen keer per dag gebruikt) een belangrijke toevoeging geworden 
+				aan het zenden van berichten. Dit is niet onverdiend aangezien MIME zorgde voor duidelijkheid bij het sturen van berichten 
+				maar ook er voor zorgde dat het erg eenvoudig bleef en makkelijk te begrijpen. Aangezien het de tand der tijd heeft overleeft 
+				en ook gebruikt wordt bij het maken van nieuwe e-mail systemen is de kans dat MIME nog lang mee zal gaan erg groot. <a href="http://www.docstoc.com/docs/125926406/Multipurpose-Internet-Mail-Extensions-(-MIME-)-HEADER" class="tiny">[1]</a>
 			</div>
 
 		</div>
@@ -585,6 +605,8 @@
 			</div>
 
 		</div>
+	</div>
+	</div>
 
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
