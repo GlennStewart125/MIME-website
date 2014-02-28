@@ -12,8 +12,8 @@ height:1050px;
 background-color:white;
 float:left;
 }
-
 #menu-bar{
+
 position:fixed;
 top:10;
 left:247px;
@@ -39,18 +39,12 @@ ul{
 margin-top:8px;
 }
 
-h2{
-text-align: center;
-}
-
 #content{
 	border-radius: 10px;
-/*position:fixed;*/
+position:fixed;
 top:40px;
-/*left:247px;*/
-left:25%;
-/*width:1165px;*/
-width:75%;
+left:247px;
+width:1165px;
 height:auto;
 background-color:#e6e6e6;
 float:top;
