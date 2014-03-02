@@ -2,7 +2,7 @@
 
 $(function() { 
 	var hrefs = [];
-	var spul ="";
+	var spul ="<h2>Referenties</h2>";
 	var ouder=[]; 
 		$('#tekst').find('a').each(function() 
 		{
