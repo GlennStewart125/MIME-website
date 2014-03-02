@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> FETCH_HEAD
 /** Dynamische links **/
 
 $(function() { 
@@ -18,9 +13,6 @@ $(function() {
 		jQuery.each(hrefs, function(i, val) {
 			spul +=  '<p><a href=' + "#" + ouder[i] + '>' + '[' + (i) + ']' + '</a>' +'&nbsp' + '<a href=' + hrefs[i] + '>' +  hrefs[i] + '</a></p><hr><br>';
         });
-<<<<<<< HEAD
        $('.sreferences div').html(spul);
-=======
        $('#sref div').html(spul);
->>>>>>> FETCH_HEAD
 })
