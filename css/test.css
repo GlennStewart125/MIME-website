@@ -37,13 +37,13 @@ p {
 
 a{
 color:white;
+text-decoration: none;
 }
 
 .tiny{
 	position:relative;
 	top: -1ex;
 	font-size: 0.8em;
-	text-decoration: none;
 }
 
 .blue-link{
@@ -101,7 +101,7 @@ color:blue;
 }
 
 .innersub {
-	width: 960px;
+	width: 1050px;
 	margin: -25px auto;
 	position: relative;
 	min-height: 50px;
@@ -157,12 +157,64 @@ color:blue;
 .subNavBtn {
 	display: block;
 	height: 25px;
-	width: 10%;
+	width: 15%;
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
 	font-size: 14px;
-	padding: 25px 2% 0 2%;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+	color: #fff;
+}
+
+.subsubNavBtn3 {
+	display: block;
+	height: auto;
+	width: 33.3%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+	text-align: center;
+	color: #fff;
+}
+
+.subsubNavBtn5 {
+	display: block;
+	height: auto;
+	width: 20%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+	text-align: center;
+	color: #fff;
+}
+
+.subsubNavBtn7 {
+	display: block;
+	height: auto;
+	width: 14.28%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0px 0% 0 0%;
+	text-align: center;
+	color: #fff;
+}
+	
+.subsubNavBtn2 {
+	display: block;
+	height: auto;
+	width: 50%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 0 0 0;
 	text-align: center;
 	color: #fff;
 }
@@ -183,44 +235,52 @@ color:blue;
 	color: #fff;
 }
 
+
+#placeholder {
+    width: 450px;
+    height: 200px;
+}
+
+
 .sTop {
-	height:120px;
+	height:106px;
 	background:#e5e5e5;
 	color:#bfbfbf;
 }
 
 
 
-.s1 {
+#s1 {
 	min-height: 500px;
 	background: #2e2e2e;
 }
 
 
-.s2 {
+#s2 {
 	min-height: 500px;
 	background: #3f3f3f;
 }
 
 
-.s3 {
+#s3 {
 	min-height: 500px;
 	background: #504f4f;
 }
 
 
-.s4 {
+#s4 {
 	min-height: 500px;
 	background: #6e87a1;
 	color: white;
 }
 
-.s5 {
-	min-height: 500px;
+#s5 {
+	min-height: 300px;
 	background: #293b4d;
 	color: white;
 }
 
+<<<<<<< HEAD
 .s6{
 	min-height: 500px;
 	background:#21bff4;
@@ -230,5 +290,29 @@ color:blue;
 	min-height:500px;
 	background:blue;
 	color:white;	
+=======
+#s6 {
+	min-height: 300px;
+	background: #3f3f3f;
+}
+
+#sref{
+background: #2e2e2e;
+
+}
+
+
+.legend table, .legend > div {
+    height: 82px !important;
+    opacity: 1 !important;
+    right: -55px;
+    top: 10px;
+    width: 116px !important;
+}
+ 
+.legend table {
+    border: 1px solid #555;
+    padding: 5px;
+>>>>>>> FETCH_HEAD
 }
 
