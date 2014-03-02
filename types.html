@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Webtech Practicum 1</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+<meta charset="utf-8">
+
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700'
+	rel='stylesheet' type='text/css'>
+<link href="css/test.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/clickandscroll.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+<!--[if lte IE 8]><script type="text/javascript" language="javascript" src="excanvas.min.js"></script><![endif]-->
+<!--<script type="text/javascript" language="javascript" src="js/jquery.flot.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.flot.axislabels.js"></script>-->
+
+</head>
+<body> scroll
+	<div class="wrap">
+
+		<div class="subMenu">
+			<div class="innersub">
+					<a href="index.html" class="subNavBtn">Introductie</a> 
+					<a href="header.html" class="subNavBtn">Header Fields</a> 
+					<a href="types.html" class="subNavBtn">Media types</a> 
+					<a href="voorbeeld.html" class="subNavBtn">Voorbeeld</a> 
+					<a href="toe&con.html" class="subNavBtn">Toekomst & Conclusie</a> 
+			</div>
+			<div class="subsubMenu">
+				<div class="innersubsub">
+					<a href='#s1' class="subsubNavBtn5 scroll"> Media Types </a> 
+					<a href='#s2' class="subsubNavBtn5 scroll"> Top-Level</a> 
+					<a href='#s3' class="subsubNavBtn5 scroll"> Discreet</a> 
+					<a href='#s4' class="subsubNavBtn5 scroll"> Multipart & Message</a> 
+					<a href='#sref' class="subsubNavBtn5 scroll"> Referencies</a> 
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class=" sTop">
+		</div>
+
+		<div id="tekst">
+
+		<div id= "s1" class="section">
+			<div class="inner">
+				<h2>Media Types</h2>
+				<p>Het Content-Type field wordt dus gebruikt om het soort data
+					te beschrijven door het bericht te voorzien van zowel een media
+					type als een subtype en het verstrekken van extra informatie voor
+					media typen waarbij dit vereist is<a href="http://tools.ietf.org/html/rfc2046" class="tiny">[0]</a>. Nadat dit gespecificeerd is
+					wordt de rest van het header field gebruikt voor het plaatsen van
+					parameters. Zoals hierboven vermeldt is worden top-level media
+					typen gebruikt voor het aangeven van de algemene type data waardoor
+					de user agent weet dat als hij een bericht ontvangt met image/abc
+					dat de data een afbeelding is zelfs als hij geen kennis heeft over
+					het specifieke beeldformaat “abc”.</p>
+			</div>
+
+		</div>
+
+		<div id= "s2" class="section">
+			<div class="inner">
+				<h2>Top-Level Media Types</h2>
+				<p>De definitie van wat een top-level media type bestaat uit de
+					volgende 5 eisen<a href="http://tools.ietf.org/html/rfc2046#section-2" class="tiny">[1]</a>:
+				<ul>
+					<li>Een naam en een beschrijving van het type, inclusie
+						criteria voor de vraag of een bepaalde type in aanmerking zou
+						komen om een subtype te kunnen zijn van het type.</li>
+					<li>De namen en definities van de parameters, indien
+						aanwezig,die worden gedefinieerd voor alle subtypes van het type (
+						inclusief of de parameters verplicht zijn of optioneel.</li>
+					<li>Hoe een user agent en/of een gateway om moet gaan met een
+						subtype van dit type.</li>
+					<li>Algemene beschouwing over het versturen van entiteiten
+						door gateways van dit top-level type.</li>
+					<li>Eventuele restricties op content-tranfer-encodings voor
+						entiteiten van dit top-level type.</li>
+				</ul>
+				In totaal zijn er 8 top-level media types<a href="http://tools.ietf.org/html/rfc2046#section-3" class="tiny">[2]</a>, de volgende 5 media types
+				worden ook wel Discrete media types genoemd, de inhoud van deze
+				typen wordt door non-MIME mechanismes behandeld:
+				<ul>
+					<li>Text, tekstuele informatie. Het subtype “plain” in het
+						bijzonder geeft platte tekst, die geen opmaakopdracht of
+						richtlijnen heeft gekregen over hoe de tekst getoond moer worden.
+						Plain tekst is bedoelt om tekst weergegeven te laten worden
+						“as-is”(zoals het werkelijk is, geen opmaak). Er is geen speciale
+						software nodig om de volledige betekenis van de tekst te kunnen
+						krijgen. Andere subtypes worden gebruikt om verrijkte tekst vormen
+						van applicatiesoftware die de weergave van de tekst kunnen
+						verbeteren, maar dit soort software moet niet noodzakelijk zijn om
+						het algemene idee van de tekst te kunnen verkrijgen. Mogelijke
+						subtypes van “text” zijn daarom elk tekstverwerker formaat dat
+						gelezen kan worden zonder het nodig hebben van software programma
+						die het formaat begrijpt.</li>
+					<li>Image, afbeeldinggegevens.</li>
+					<li>Audio, audio data.</li>
+					<li>Video, video data.</li>
+					<li>Application, een andere vorm van data, meestal of
+						ongeïnterpreteerde binaire gegevens of informatie die door een
+						applicatie moet worden verwerkt.</li>
+				</ul>
+				</p>
+				<p>Dit zijn staan de 2 samengestelde top-level media types:
+				<ul>
+					<li>Multipart, gegevens bestaande uit meerdere entiteiten van
+						onafhankelijke data types.</li>
+					<li>Message, een ingekapseld bericht. Media van het type
+						“message” is deel van of in zijn geheel een bericht object.</li>
+				</ul>
+				Wanneer er een onbekende subtype van “text” in de data staat wordt
+				de data automatisch behandeld alsof het van de subtype “plain” was,
+				zolang de gebruikte set van karakters bij MIME bekent is. Alle data
+				met zowel een onbekende subtype als een onbekende set karakters
+				wordt geïnterpreteerd als het type “application/octet-stream”(wat
+				aangeeft dat MIME ervan uitgaat dat dit een body is met willekeurige
+				nummers). Mochten er nieuwe media types of subtypes nodig zijn door
+				nieuwe soort media kan dat in MIME eenvoudig geïmplementeerd worden.
+				Voordat bijvoorbeeld een subtype wordt toegevoegd is er wel een
+				registratie procedure om ervoor te zorgen dat het type ordelijk en
+				op een goede manier gespecifieerd is.
+				</p>
+				<p>
+				Ook is er sinds kort een nieuwe media type bij gekomen, het model media type, Deze wordt gebruikt om informatie te sturen over 3d modellen.
+				</p>
+			</div>
+
+		</div>
+
+		<div id= "s3" class="section">
+			<div class="inner">
+				<h2>Discrete Media Types<a href="http://tools.ietf.org/html/rfc2046#section-4" class="tiny">[3]</a></h2>
+				<p>Het “text” media type is bedoelt voor het versturen van
+					materiaal in tekstuele vorm. Een parameter “charset” kan worden
+					gebruikt om het tekenset dat in de data gebruikt wordt te
+					vermelden. Naast “plain” tekst zijn er vele andere formaten om
+					tekst te presenteren genaamd “rich text”. Een interessant kenmerk
+					van veel van dit soort teksten is dat ze tot op zekere hoogte
+					leesbaar zijn zonder de software die ze zou moeten interpreteren.
+					Het media type “image” wordt gebruikt wanneer de data die verstuurd
+					moet worden een afbeelding is. Elke subtype van “image” geeft een
+					ander soort afbeelding formaat aan. Wanneer er data wordt verzonden
+					waar in de Content-Type field als media type “audio” is aangegeven
+					gaat het om een body waarin audio data zit. Een media type “video”
+					geeft aan dat de data in de body een video is. Zoals genoemd zal
+					een “image”media type, een “audio” media type en een “video” media
+					type met een onbekende subtype behandeld worden als
+					“application/octet-stream”. De “application” media type wordt
+					gebruikt voor discrete data die in geen één van de andere
+					categorieën passen en in het bijzonder voor gegevens die verwerk
+					moeten worden door een soort software. Dit si informatie die pas
+					zichtbaar of bruikbaar wordt voor de gebruiker nadat het verwerkt
+					is door de applicatie. Voorbeelden van applicaties waarvoor deze
+					media type gebruikt voor kan worden is bestandoverdracht,
+					spreadsheets, data voor mail gebaseerde agenda systemen. “Model”<a href="http://tools.ietf.org/html/rfc2077" class="tiny">[4]</a>
+					wordt gebruikt voor het versturen van modellen. Modellen zijn
+					multidimensionale structuren die uit één of meer objecten bestaan.
+				</p>
+			</div>
+
+		</div>
+
+		<div id= "s4" class="section">
+			<div class="inner">
+				<h2>Multipart & Message Media Type</h2>
+				<p>Bij meervoudige eenheden, waarbij één of meer verschillende
+					datasets worden gecombineerd in een enkele body, zal er een
+					“multipart” media type in de header geplaatst moeten worden<a href="http://tools.ietf.org/html/rfc2046#section-5.1" class="tiny">[5]</a>. De
+					body moet dan één of meer body parts hebben, die elk gescheiden
+					zijn door en lijn en de laatste ook een afsluitende lijn bevat. Na
+					de scheidingslijnen heeft elke body part zijn eigen header, een
+					lege regel en een body area. Een body is een entiteit en moet
+					daarom niet geïnterpreteerd worden als een volledig bericht. Het
+					eerste verschil is dat het toegestaan is om een body part zonder
+					header fields te beginnen. Wanneer er in een body part geen header
+					aanwezig is en dus begint met een wit regel wordt ervan uit gegaan
+					dat de informatie die in de body part aanwezig is in content-type
+					heeft van “text/plain; charset=US-ASCII”, oftewel standaard tekst.
+					Mocht er een header field aanwezig zijn in de body part dan is de
+					enige header field die van waarde is een header field die begint
+					met “Content-“, alle andere fields kunnen genegeerd worden. Alle
+					“multipart” types die op dit moment bestaan of in de toekomstige
+					types moeten zich aan deze syntax houden. Dit zorgt ervoor dat alle
+					user agents de parts apart kunnen herkennen en kunnen scheiden,
+					zelf als het een onbekende subtype is. Ook is het vaak wenselijk
+					tijdens het zenden van een e-mail om nog een ingekapseld
+					mailbericht mee te sturen. Dit wordt gedaan door het speciale media
+					type “message”<a href="http://tools.ietf.org/html/rfc2046#section-5.2" class="tiny">[6]</a>. In het bijzonder de “rfc822” subtype van “message”
+					die gebruikt wordt om die gebruikt wordt om rfc822 berichten te
+					kapselen. Sub typen van “message” leggen vaak restricties op aan de
+					coderingen die gebruikt mogen worden. De beperking die opgelegd
+					wordt hangt af van het sub type en worden daarom in samenhang
+					beschreven.</p>
+			</div>
+
+		</div>
+
+		<div id= "sref" class="section">
+			<div class="inner">
+				<h2>Referenties</h2>
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push([ '_setAccount', 'UA-9804757-1' ]);
+			_gaq.push([ '_trackPageview' ]);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+						: 'http://www')
+						+ '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+
+</body>
+</html>

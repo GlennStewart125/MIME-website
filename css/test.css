@@ -1,5 +1,6 @@
 * {margin: 0; padding: 0; outline: 0;}
 
+
 body {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
@@ -37,13 +38,30 @@ p {
 
 a{
 color:white;
+text-decoration: none; 
+}
+
+/*a:hover{
+text-decoration: underline;
+color:blue;
+}*/
+
+.tiny{
+	position:relative;
+	top: -1ex;
+	font-size: 0.8em;
+}
+
+.blue-link{
+color:blue;
+}
+text-decoration: none;
 }
 
 .tiny{
 	position:relative;
 	top: -1ex;
 	font-size: 0.8em;
-	text-decoration: none;
 }
 
 .blue-link{
@@ -101,7 +119,7 @@ color:blue;
 }
 
 .innersub {
-	width: 960px;
+	width: 1050px;
 	margin: -25px auto;
 	position: relative;
 	min-height: 50px;
@@ -114,10 +132,9 @@ color:blue;
 
 
 .innersubsub {
-	width: 1084px;
+	width: 960px;
 	margin: -15px auto;
 	position: absolute;
-	text-align:center;
 	min-height: 50px;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
@@ -141,10 +158,10 @@ color:blue;
 .subsubMenu{
 	position: relative;
 	top: 0px;
-	left:0px;
+	left:100px;
 	height: 60px;
 	z-index: 1000;
-	width:100%;
+	width:960px;
 	background: #0286b2;	
 }
 
@@ -157,12 +174,64 @@ color:blue;
 .subNavBtn {
 	display: block;
 	height: 25px;
-	width: 10%;
+	width: 15%;
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
 	font-size: 14px;
-	padding: 25px 2% 0 2%;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+	color: #fff;
+}
+
+.subsubNavBtn3 {
+	display: block;
+	height: auto;
+	width: 33.3%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+	text-align: center;
+	color: #fff;
+}
+
+.subsubNavBtn5 {
+	display: block;
+	height: auto;
+	width: 20%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+	text-align: center;
+	color: #fff;
+}
+
+.subsubNavBtn7 {
+	display: block;
+	height: auto;
+	width: 14.28%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0px 0% 0 0%;
+	text-align: center;
+	color: #fff;
+}
+	
+.subsubNavBtn2 {
+	display: block;
+	height: auto;
+	width: 50%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 0 0 0;
 	text-align: center;
 	color: #fff;
 }
@@ -172,9 +241,10 @@ color:blue;
 }
 
 .subsubNavBtn {
-	display: inline;
+	display: block;
 	height: auto;
-	width: auto;
+	width: 10%;
+	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
 	font-size: 14px;
@@ -183,52 +253,75 @@ color:blue;
 	color: #fff;
 }
 
+
+#placeholder {
+    width: 450px;
+    height: 200px;
+}
+
+
 .sTop {
 	height:120px;
 	background:#e5e5e5;
-	color:#bfbfbf;
+	color:#3d3d3d;
 }
 
 
 
-.s1 {
+#s1 {
 	min-height: 500px;
 	background: #2e2e2e;
 }
 
 
-.s2 {
+#s2 {
 	min-height: 500px;
 	background: #3f3f3f;
 }
 
 
-.s3 {
+#s3 {
 	min-height: 500px;
 	background: #504f4f;
 }
 
 
-.s4 {
+#s4 {
 	min-height: 500px;
 	background: #6e87a1;
 	color: white;
 }
 
-.s5 {
-	min-height: 500px;
+#s5 {
+	min-height: 300px;
 	background: #293b4d;
 	color: white;
 }
 
-.s6{
-	min-height: 500px;
-	background:#21bff4;
-	color:white;	
+#s6 {
+	min-height: 300px;
+	background: #3f3f3f;
 }
-.sreferences{
-	min-height:500px;
-	background:blue;
-	color:white;	
+
+#sref{
+background: #2e2e2e;
+
 }
+
+
+
+
+
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+
+#placeholder { width: 500px; height: 600px; position: relative; margin: 0 auto; }
+
+.legend table, .legend > div { height: 82px !important; opacity: 1 !important; right: -55px; top: 10px; width: 116px !important; }
+
+.legend table { border: 1px solid #FFFFFF; padding: 5px; }
+
+#flot-tooltip { font-size: 12px; font-family: Verdana, Arial, sans-serif; position: absolute; display: none; border: 2px solid; padding: 2px; background-color: #FFF; opacity: 0.8; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
+
+
+
 

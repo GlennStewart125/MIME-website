@@ -1,0 +1,4 @@
+Ik even de mijn verie gebruikt en die erop gepushed omdat alle sites al had gesplits en bezig was geweest met de flot,
+bovendien werkt door het gebruik van de <a's als id niet omdat het dan bij de referencies helemaal mis ging.
+Ik heb de smoothscroll erin gezet en ben nu bezig om te kijken naar meer veranderingen maar mocht je iets vinden wat beter kan
+zonder dat het ergens anders er fout door gaat doe het er vooral in
