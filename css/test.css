@@ -1,6 +1,5 @@
 * {margin: 0; padding: 0; outline: 0;}
 
-
 body {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
@@ -115,9 +114,10 @@ color:blue;
 
 
 .innersubsub {
-	width: 960px;
+	width: 1084px;
 	margin: -15px auto;
 	position: absolute;
+	text-align:center;
 	min-height: 50px;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
@@ -141,10 +141,10 @@ color:blue;
 .subsubMenu{
 	position: relative;
 	top: 0px;
-	left:100px;
+	left:0px;
 	height: 60px;
 	z-index: 1000;
-	width:960px;
+	width:100%;
 	background: #0286b2;	
 }
 
@@ -172,10 +172,9 @@ color:blue;
 }
 
 .subsubNavBtn {
-	display: block;
+	display: inline;
 	height: auto;
-	width: 10%;
-	float: left;
+	width: auto;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
 	font-size: 14px;
@@ -220,5 +219,16 @@ color:blue;
 	min-height: 500px;
 	background: #293b4d;
 	color: white;
+}
+
+.s6{
+	min-height: 500px;
+	background:#21bff4;
+	color:white;	
+}
+.sreferences{
+	min-height:500px;
+	background:blue;
+	color:white;	
 }
 

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Webtech Practicum 1</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+<meta charset="utf-8">
+
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700'
+	rel='stylesheet' type='text/css'>
+
+<link href="css/test.css" rel="stylesheet" type="text/css">
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.smint.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+
+
+</head>
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<div class="wrap">
+
+		<div class="subMenu">
+			<div class="innersub">
+				<a href="index.html" id="sTop" class="subNavBtn">Introductie</a> <a href="#"
+					id="s1" class="subNavBtn">Header Fields</a> <a href="#" id="s2"
+					class="subNavBtn">Media types</a> <a href="#" id="s3"
+					class="subNavBtn">voorbeeld</a> <a href="#" id="s4"
+					class="subNavBtn">Toekomst</a> <a href="#" id="s5"
+					class="subNavBtn end">Conclusie</a> <a href='#' id="s6"
+					class="subNavBtn"></a>
+			</div>
+			<div class="subsubMenu">
+				<div class="innersubsub">
+					<a href='#headerfields' id="sTop" class="subsubNavBtn"> Header Fields </a> <a
+						href='#MIME-version' id="s1" class="subsubNavBtn"> MIME-version</a> <a
+						href='#' id="s2" class="subsubNavBtn"> Content-Type</a> <a
+						href='#' id="s3" class="subsubNavBtn">
+						Content-Transfer-Encoding</a> <a href='#' id="s4" class="subsubNavBtn">
+						Content-ID</a> <a href='#' id="s5" class="subsubNavBtn">
+						Content-Description</a> <a href='#' id="s7" class="subsubNavBtn">
+						References</a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class=" sTop"></div>
+
+		<div id="tekst">
+
+			<div class="section s1">
+
+				<div class="inner">
+
+
+					<h2><a name="headerfields">Header Fields</a></h2>
+					<p>
+						MIME gebruikt een aantal header fields om de content van een MIME
+						geheel te beschrijven<a href="http://tools.ietf.org/html/rfc2045"
+							class="tiny">[1]</a>. Vier header types waren van groot belang:
+					</p>
+					<ul>
+						<li>Een MIME-Version header field, hier wordt weergegeven
+							welke versie van MIME gebruikt wordt door het versie nummer te
+							checken of te zien dat er geen MIME gebruikt wordt als de mail
+							agent ziet dat dit veld ontbreekt.</li>
+						<li>Een Content-Type header field, dit veld kan gebruikt
+							worden om aan te geven welk media type en subtype de data in de
+							body (gedeelte van een bericht waar de data aanwezig is) is
+							waardoor de mail agent van de ontvanger duidelijk te zien krijgt
+							hoe hij de data moet presenteren.</li>
+						<li>Een Content-Transfer-Encoding header field, dit veld
+							wordt gebruikt om aan te geven welke codering is aangebracht op
+							de body. De codering die op het e-mail bericht wordt aangebracht
+							wordt grotendeels gedaan zodat het bericht mail transport
+							mechanismes kan passeren die data of teken set limitaties kunnen
+							hebben.</li>
+						<li>Twee extra header fields die gebruikt kunnen worden om de
+							data in de body nog preciezer te beschrijven, dit zijn namelijk
+							de Content-ID en Content-Description header fields. Al de header
+							fields die aanwezig zijn voldoen aan de voorwaarden voor header
+							fields die in RFC 822 zijn vastgesteld. Ook kunnen alle headers
+							fields die besproken worden RFC 822 comments bevatten, deze
+							hebben geen semantische waarde en zullen door MIME genegeerd
+							worden.</li>
+					</ul>
+					<p>Een formele defenitie van deze fields is als volgt:
+					<p>
+						entity-headers := [ content CRLF ]<BR> [ encoding CRLF]<BR>
+						[ id CRLF]<BR> [ description CRLF]<BR>
+					</p>
+					<p>
+						MIME-message-headers := entity-headers<BR> fields<BR>
+						version CRLF<BR>
+					</p>
+					<p>
+						MIME-part-headers := entity-headers <BR> [ fields ]<BR>
+					</p>
+					CRLF = Enter<BR>
+					</p>
+				</div>
+
+			</div>
+
+			<div class="section s2">
+				<div class="inner">
+					<h2>	<a name="MIME-version">MIME-version Header Field</a></h2>
+					<p <a ></a>
+						Alhoewel MIME een extensie is die verenigbaar is met het standaard
+						dat beschreven is in RFC 822, zijn er toch omstandigheden waarin
+						het wenselijk zou zijn om een post-processing middel te laten
+						weten of het bericht samengesteld was met de nieuwe standaard of
+						niet. Daarom is de MIME-Version header field aanwezig, die
+						aangeeft in welk versie van MIME de body van het bericht is
+						samengesteld. Berichten die gebruik maken van MIME moeten dit
+						aangeven door bijvoorbeeld de regel: MIME-Version: 1.0 (in dit
+						geval de versie 1.0 van MIME) te vermelden. Aangezien het mogelijk
+						is dat er in de toekomst een nieuwere versie van MIME wordt
+						gebruikt kunnen zowel de 1 als de 0 verschillende nummers bevatten
+						om duidelijk te maken dat het om een andere versie gaat. De
+						formele definitie van het MIME-Version field is:<br> version
+						:= “MIME-Version” “:” 1*DIGIT “.” 1*DIGIT <br> <br>
+						Mocht een bericht verstuurd zijn gebruikmakend van MIME moet het
+						MIME-Version header field de eerste regel zijn in het bericht.
+						Wanneer dit veld niet aanwezig is heeft de mail user agent de
+						mogelijkheid om te bepalen op welke manier hij het bericht wilt
+						lezen.
+					</p>
+				</div>
+
+			</div>
+
+			<div class="section s3">
+				<div class="inner">
+					<h2><a name ="content-type">Content-Type Header Field</a></h2>
+					<p>Het doel van de Content-Type field is om de data die het
+						bericht in de body ( het gedeelte waar de tekst, afbeeldingen,
+						audio of video wordt geplaatst) zo te beschrijven dat het
+						programma dat de ontvanger gebruikt om zijn e-mail berichten te
+						bekijken en versturen, inziet om wat voor soort bestand het gaat
+						en dit kan gebruiken om op de juiste manier het bestand af te
+						handelen. Het waarde in dit veld wordt ook wel “media type”
+						genoemd.</p>
+					<p>De Content-Type header field bepaald de aard van een
+						entiteit door de data in de body een media type en subtype te
+						geven en aanvullende informatie te vermelden over de data bij de
+						media types en subtypes waarbij dit nodig is. Na de media type en
+						subtype namen bestaat de overige ruimte van het header field uit
+						parameters die op een attribuut= waarde manier is genoteerd.</p>
+					<p>In het algemeen wordt de top-level media type gebruikt om
+						een algemene uitspraak te doen over de type data terwijl de
+						subtype een specifieke formaat data van de media type aangeeft.
+						Een media type is dus bijvoorbeeld image/abc, doordat er voor de
+						slash image staat heeft de user agent genoeg informatie om te
+						weten dat het over een afbeelding gaat, zelfs wanneer de UA geen
+						kennis heeft over het specifieke beeldformaat “abc”. Dit kan
+						bijvoorbeeld gebruikt worden om te beslissen om de data van een
+						subtype die niet bekent is te laten zien of dit niet te doen, bij
+						een tekst kan de keuze worden gemaakt om het toch gewoon te laten
+						zien, maar met een video, audio of een afbeelding wil men dat
+						natuurlijk niet. Om deze reden moet een geregistreerde subtype van
+						tekst, audio, video of een afbeelding geen ingesloten data
+						bevatten die werkelijk van een andere subtype is. Als ze van een
+						andere subtype zijn moet dat dus ook worden aangegeven. Parameters
+						modificeren de media subtype en zijn dus niet van fundamentele
+						invloed op de aard van de inhoud. Welke parameters nuttig zijn
+						hangt van het subtype af, de meeste parameters zijn geassocieerd
+						met en specifiek subtype. Ook de media type zelf is van invloed
+						omdat er bij een bepaalde media type een bepaalde hoeveelheid
+						parameters passen. Er is namelijk geen één parameter die voor alle
+						media types zinvol is Parameters kunnen verplicht zijn voor
+						bepaalde media types en subtypes. Mocht er een parameter zijn die
+						niet bekend is bij MIME zal hij genegeerd worden. De parameter
+						“charset” is bijvoorbeeld alleen bruikbaar voor de subtype “text”,
+						terwijl de “boundary” parameter verplicht is voor elke subtype van
+						de “multipart” media type.</p>
+					<p>Er bestaan op dit moment 8 top-level, zes van deze types
+						waren discrete vormen, wat betekent dat MIME niet veel aandacht
+						aan hoeft te geven, de andere twee zijn samengestelde typen en
+						hebben extra aandacht aan moet worden besteedt (zie Media Types
+						voor meer informatie). Deze set van acht top level media types is
+						bedoelt om compleet te zijn. Men verwacht dat het toevoegen van
+						een extra media type ook gedaan kan worden door een extra subtype
+						toe te voegen, hierdoor kan het toevoegen zo veel mogelijk worden
+						uitgesteld.</p>
+				</div>
+
+			</div>
+
+			<div class="section s4">
+				<div class="inner">
+					<h2><a name= content-transfer-encoding>Content-Transfer-Encoding Header Field</a></h2>
+					<p>Veel media types die via berichten worden verstuurd worden
+						verstuurd in hun “natuurlijke” formaat, wat inhoud dat het in 8bit
+						karakters of als binaire gegevens wordt verzonden. Dat formaat
+						gegevens kan over bepaalde transfer protocollen niet worden
+						verzonden. SMTP (Simple Mail Transfer Protocol) kan bijvoorbeeld
+						alleen 7bit US-ASCII berichten versturen met regels die niet
+						langer zijn dan 1000 tekens inclusief lijn separatoren(enters).
+						Het is hierdoor noodzakelijk om een standaard mechanisme te
+						definiëren om de standaard data te coderen als “7bit short line”
+						formaat. Goede etikettering voor ongecodeerde data die minder
+						beperkt wordt in de transport is wenselijk. Deze codering wordt
+						door het Content-Transfer-Encoding header field aangegeven.</p>
+					<p>
+						De formele definitie voor de codering is als volgt:<br>
+						encoding:= “Content-Transfer-Encoding” “:” mechanism<br>
+						mechanism:= “7bit” / “8bit” / “binary” / “quoted-printable” /
+						“base64” / ietf-token / x-token
+					</p>
+					<p>Dit veld geeft in één keer twee stukken informatie. Het laat
+						de ontvanger weten met welke codering het bericht verandert is en
+						er wordt ook aangegeven welke decodering moet worden gebruikt om
+						de oorspronkelijke data te krijgen. Het transformeer gedeelte van
+						de Content-Transfer-Encodings specificeert expliciet of impliciet
+						welke decodering algoritme moet worden gebruikt en om de originele
+						data te laten zien of om erachter te komen dat het niet op de
+						genoemde manier is gecodeerd. Terwijl er bij het coderen kan
+						worden gekozen op welke manier de data wordt verandert, kan er bij
+						het decoderen maar 1 goede mogelijkheid is.</p>
+					<p>De drie meest gebruikte soorten codering zijn: identity,
+						“quoted-printable” codering en de “base64” codering. Met als
+						domein: “binairy”, “8bit” of “7bit”. The quoted-printable en
+						base64 codering transformeren beide de input van een bepaald
+						domein naar “7bit”data, waardoor het bericht zonder zorgen
+						overgedragen kan worden aan een beperktere e–mail transport.
+						Wanneer er gebruik wordt gemaakt van een Content-Tranfer-Encoding
+						label moet altijd het correcte label worden gebruikt. Het labelen
+						van data met 8bit karakters als “7bit” is niet toegestaan.</p>
+					<p>In tegenstelling tot media subtypen, is het toevoegen van
+						nieuwe types zowel onwenselijk als onnodig. Echter een enkele
+						codering om data om te zetten naar 7bit lijkt niet mogelijk. Er is
+						sprake van een afweging tussen compactheid en efficiëntie van de
+						codering van grotendeels binaire data en het verlangen om de
+						codering enigszins ‘leesbaar’ te maken. Daarom zijn er tenminste 2
+						codeer mechanismen nodig: een min of meer leesbare codering
+						(quoted-printable) en een compacte codering (base64).</p>
+				</div>
+
+			</div>
+
+			<div class="section s5">
+				<div class="inner">
+					<h2><a name="content-id">Content-ID Header Field</a></h2>
+					<p>
+						Bij de Constructie van een high-level user agent, kan het
+						wenselijk zijn om een body te verwijzen naar een andere body.
+						Daarom kunnen bodies gelabeld worden met een “Content-ID” header
+						field, die zo gegenereerd wordt dat er nergens anders op de wereld
+						een zelfde “Content-ID” bestaat:<br> id: “Content-ID” “:”
+						msg-id
+					</p>
+				</div>
+
+			</div>
+
+			<div class="section s6">
+				<div class="inner">
+					<h2><a name="content-description">Content-Description Header Field</a></h2>
+					<p>
+						De mogelijkheid om beschrijvende informatie te kunnen associëren
+						met de body is vaak gewenst. Het kan bijvoorbeeld nuttig zijn om
+						bij een afbeelding de informatie “foto van onze nieuwe auto”. Dit
+						soort tekst kan in de Content-Description header field geplaatst
+						worden en is altijd optioneel.<br> Description :=
+						“Content-Description” “:” *text
+					</p>
+				</div>
+			</div>
+			<div class="section sreferences">
+				<div class="inner">
+					<h2>Referenties</h2>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-9804757-1' ]);
+		_gaq.push([ '_trackPageview' ]);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>

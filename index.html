@@ -15,31 +15,30 @@
 
 <link href="css/test.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.smint.js"></script>
+<script src="js/clickandscroll.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 
 
+
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+<body>
 
 	<div class="wrap">
 
 		<div class="subMenu">
 			<div class="innersub">
-				<a href="#" id="sTop" class="subNavBtn">Introductie</a> <a href="#"
-					id="s1" class="subNavBtn">Ontstaan</a> <a href="#" id="s2"
-					class="subNavBtn">Header Fields</a> <a href="#" id="s3"
-					class="subNavBtn">Media types</a> <a href="#" id="s4"
-					class="subNavBtn">voorbeeld</a> <a href="#" id="s5"
-					class="subNavBtn">Toekomst</a> <a href="#" id="s6"
-					class="subNavBtn end">Conclusie</a> <a href='#' id="s7"
+				<a href="#" id="sTop" class="subNavBtn">Introductie</a> <a href="#test"
+					id="s1" class="subNavBtn">Header Fields</a> <a href="#" id="s2"
+					class="subNavBtn">Media types</a> <a href="#" id="s3"
+					class="subNavBtn">voorbeeld</a> <a href="#" id="s4"
+					class="subNavBtn">Toekomst</a> <a href="#" id="s5"
+					class="subNavBtn end">Conclusie</a> <a href='#' id="s6"
 					class="subNavBtn"></a>
 			</div>
 			<div class="subsubMenu">
 				<div class="innersubsub">
-					<a href='#' id="sTop" class="subsubNavBtn"> Subkop 1 </a> <a
-						href='#' id="s1" class="subsubNavBtn"> Subkop 2</a> <a href='#'
+					<a href='#introductie' id="sTop"  class="scroll" class="subsubNavBtn"> Subkop 1 </a>
+					 <a href='#test' id="s1" class="scroll" class="subsubNavBtn"> Subkop 2</a> <a href='#'
 						id="s2" class="subsubNavBtn"> Subkop 3</a> <a href='#' id="s3"
 						class="subsubNavBtn"> Subkop 4</a> <a href='#' id="s4"
 						class="subsubNavBtn"> Subkop 5</a> <a href='#' id="s5"
@@ -54,12 +53,12 @@
 		<div class=" sTop">
 		</div>
 
-		<div id="tekst">
+		<div  id="tekst">
 	
 		<div class="section s1">
-
+		
 			<div class="inner">
-				<h2>Introductie</h2>
+				<h2><a id="introductie">Introductie</a></h2>
 				<p>MIME betekent Multipurpose Internet Mail Extensions. Dit
 					klinkt heel ingewikkeld en niet heel belangrijk, maar MIME is een
 					internet standaard die het mogelijk maakt media types the labelen,
@@ -77,7 +76,7 @@
 		<div class="section s2">
 			<div class="inner">
 
-				<h2>Ontstaan van MIME</h2>
+				<h2> <a id="test">Ontstaan van MIME</a></h2>
 				<p>Mail berichten waarin alleen tekst aanwezig was werd in RFC
 					822 al in 1982 gedefinieerd<a href="http://tools.ietf.org/html/rfc822" class="tiny">[2]</a>.
 					Het succes van dit standaard was zo
@@ -596,7 +595,7 @@
 
 		</div>
 
-		<div class="section s16">
+		<div class="sreferences">
 			<div class="inner">
 				<h2>Referenties</h2>
 			</div>
