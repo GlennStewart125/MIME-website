@@ -24,8 +24,6 @@
 </head>
 <body>
 	<div class="wrap">
-
-
 		<div class="subMenu">
 			<div class="innersub">
 				<a href="index.html" class="subNavBtn">Introductie</a> <a
@@ -44,6 +42,23 @@
 						class="subsubNavBtn7 scrollto"> Content-ID</a> <a href='#content6'
 						class="subsubNavBtn7 scrollto">Content-Description </a> <a
 						href='#sref' class="subsubNavBtn7 scrollto"> Referenties</a>
+					<button class="tekstbutton">Hide all text</button>
+					<!-- script voor hiden van het huidige div -->
+					<script>
+						$('.tekstbutton').click(function() {
+							var tekstdivs = $('div').find('.section');
+							if (tekstdivs.hasClass("teksthidden")) {
+								tekstdivs.removeClass("teksthidden");
+								this.innerHTML = 'Hide all text';
+							} 
+							else {
+								tekstdivs.addClass("teksthidden");
+								this.innerHTML = 'Show all text';
+							}
+
+						});
+					</script>
+
 				</div>
 			</div>
 		</div>
@@ -54,15 +69,6 @@
 
 			<div id="content1" class="section">
 				<div class="inner">
-					<button>hide the div</button>
-					<!-- script voor hiden van het huidige div -->
-					<script>
-					$('button').click(function() {
-					    var which = $(this).index();
-					    $('div').find('#content1').addClass("testhide");
-					    $('div').find('#content2').addClass("testpixel");
-					});
-					</script>
 
 					<h2>Header Fields</h2>
 					<p>
@@ -114,10 +120,11 @@
 
 			</div>
 
-<script type=text/javascript>
-var hoogte = $("#content1").height()+200;
-document.getElementById('content1').style.height = hoogte+"px";
-</script>
+			<script type=text/javascript>
+				var hoogte = $("#content1").height() + 200;
+				document.getElementById('content1').style.height = hoogte
+						+ "px";
+			</script>
 			<div id="content2" class="section">
 				<div class="inner">
 					<h2>MIME-version Header Field</h2>

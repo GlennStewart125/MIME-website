@@ -40,6 +40,22 @@
 					<a href='#content1' class="subsubNavBtn3 scrollto"> Toekomst </a> 
 					<a href='#content2' class="subsubNavBtn3 scrollto"> Conclusie</a> 
 					<a href='#sref' class="subsubNavBtn3 scrollto"> Referencies</a> 
+										<button class="tekstbutton">Hide all text</button>
+					<!-- script voor hiden van het huidige div -->
+					<script>
+						$('.tekstbutton').click(function() {
+							var tekstdivs = $('div').find('.section');
+							if (tekstdivs.hasClass("teksthidden")) {
+								tekstdivs.removeClass("teksthidden");
+								this.innerHTML = 'Hide all text';
+							} 
+							else {
+								tekstdivs.addClass("teksthidden");
+								this.innerHTML = 'Show all text';
+							}
+
+						});
+					</script>
 				</div>
 			</div>
 		</div>

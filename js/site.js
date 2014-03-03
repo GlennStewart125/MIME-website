@@ -10,7 +10,7 @@ $(function() {
 			ouder.push($(this).parent().parent().parent().attr('id'));
 		})	
 		jQuery.each(hrefs, function(i, val) {
-			spul +=  '<p><a href=' + '#' + ouder[i]  +' class="scrollto" '+'>' + '[' + (i) + ']' + '</a>' +'&nbsp' + '<a href=' + hrefs[i] + '>' +  hrefs[i] + '</a></p><hr><br>';
+			spul +=  '<p><a href=' + '#' + ouder[i]+' class="scrollto" '+'>' + '[' + (i) + ']' + '</a>' +'&nbsp' + '<a href=' + hrefs[i] + '>' +  hrefs[i] + '</a></p><hr><br>';
         });
        $('#sref div').html(spul);
 })

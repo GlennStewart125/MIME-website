@@ -4,9 +4,22 @@
 	top:120px;
 }
 
-.testhide{
+.teksthidden{
 display:none;	
 	
+}
+.tekstbutton{
+
+position: absolute;
+left:980px;
+color: #fff;
+background: #0286b2;
+border: none;
+width:100px;
+font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
 }
 
 body {
