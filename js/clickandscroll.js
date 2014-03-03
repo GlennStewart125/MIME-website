@@ -1,11 +1,9 @@
 //Smooth scrolling function
 $(document).ready(function($) {
-	$(".scroll").click(function(scroller){
+	$(".scrollto").click(function(scroller){
 		scroller.preventDefault();
 		
-		$("html,body").animate({scrollTop: $(this.hash).offset().top - 15}, "slow");
-		$(".scrollacity").animate({ opacity: 0.6 }, "fast", unDo);
-		function unDo(){ $(".scrollacity").animate({ opacity: 1.0 }, 950); }
+		$("html,body").animate({scrollTop: $(this.hash).offset().top - 120}, 1500);
 		location.hash = this.hash;
 	});
 });
