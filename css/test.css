@@ -254,46 +254,38 @@ color:blue;
 }
 
 
-.sTop {
-	height:120px;
-	background:#e5e5e5;
-	color:#3d3d3d;
-}
-
-
-
-#s1 {
+#content1 {
 	top:120px;
 	min-height: 500px;
 	background: #3f3f3f;
 }
 
 
-#s2 {
+#content2 {
 	min-height: 500px;
 	background: #504f4f;
 }
 
 
-#s3 {
+#content3 {
 	min-height: 500px;
 	background: #2e2e2e;
 }
 
 
-#s4 {
+#content4 {
 	min-height: 500px;
 	background: #6e87a1;
 	color: white;
 }
 
-#s5 {
+#content5 {
 	min-height: 300px;
 	background: #293b4d;
 	color: white;
 }
 
-#s6 {
+#content6 {
 	min-height: 300px;
 	background: #3f3f3f;
 }

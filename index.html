@@ -5,13 +5,17 @@
 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
 <meta charset="utf-8">
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700'
+	rel='stylesheet' type='text/css'>
 <link href="css/test.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/clickandscroll.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 
@@ -20,122 +24,123 @@
 	<div class="wrap">
 		<div class="subMenu">
 			<div class="innersub">
-					<a href="index.html" class="subNavBtn">Introductie</a> 
-					<a href="header.html" class="subNavBtn">Header Fields</a> 
-					<a href="types.html" class="subNavBtn">Media types</a> 
-					<a href="voorbeeld.html" class="subNavBtn">Voorbeeld</a> 
-					<a href="toe&con.html" class="subNavBtn">Toekomst & Conclusie</a> 
+				<a href="index.html" class="subNavBtn">Introductie</a> <a
+					href="header.html" class="subNavBtn">Header Fields</a> <a
+					href="types.html" class="subNavBtn">Media types</a> <a
+					href="voorbeeld.html" class="subNavBtn">Voorbeeld</a> <a
+					href="toe&con.html" class="subNavBtn">Toekomst & Conclusie</a>
 			</div>
 			<div class="subsubMenu">
 				<div class="innersubsub">
-					<a href='#s1' class="subsubNavBtn3 scrollto"> Introductie </a> 
-					<a href='#s2' class="subsubNavBtn3 scrollto"> Ontstaan</a> 
-					<a href='#sref' class="subsubNavBtn3 scrollto"> Referentie</a> 
+					<a href='#content1' class="subsubNavBtn3 scrollto"> Introductie
+					</a> <a href='#content2' class="subsubNavBtn3 scrollto"> Ontstaan</a> <a
+						href='#sref' class="subsubNavBtn3 scrollto"> Referentie</a>
 				</div>
 			</div>
 		</div>
 
 		<div id="tekst">
-	
-		<div id= "s1" class="section">		
-			<div class="inner">
-				<h2>Introductie</h2>
-				<p>MIME betekent Multipurpose Internet Mail Extensions. Dit
-					klinkt heel ingewikkeld en niet heel belangrijk, maar MIME is een
-					internet standaard die het mogelijk maakt media types the labelen,
-					nieuwe media types te registreren en deze te encoden zodat ze over
-					het internet via berichten verstuurd konden worden. Het maakte het
-					mogelijk om andere karakter sets dan US-ASCII te gebruiken,
-					attachments die geen tekst waren eenvoudig mee te sturen, een
-					bericht te sturen met meerdere soorten media en header informatie
-					in non-ASCII te schrijven<a href="http://www.docstoc.com/docs/125926406/Multipurpose-Internet-Mail-Extensions-(-MIME-)-HEADER" class="tiny">[0]</a>). Dit wordt gedaan door gebruik te maken
-					van header fields en media types.</p>
+
+			<div id="content1" class="section">
+				<div class="inner">
+					<h2>Introductie</h2>
+					<p>
+						MIME betekent Multipurpose Internet Mail Extensions. Dit klinkt
+						heel ingewikkeld en niet heel belangrijk, maar MIME is een
+						internet standaard die het mogelijk maakt media types the labelen,
+						nieuwe media types te registreren en deze te encoden zodat ze over
+						het internet via berichten verstuurd konden worden. Het maakte het
+						mogelijk om andere karakter sets dan US-ASCII te gebruiken,
+						attachments die geen tekst waren eenvoudig mee te sturen, een
+						bericht te sturen met meerdere soorten media en header informatie
+						in non-ASCII te schrijven<a
+							href="http://www.docstoc.com/docs/125926406/Multipurpose-Internet-Mail-Extensions-(-MIME-)-HEADER"
+							class="tiny">[0]</a>). Dit wordt gedaan door gebruik te maken van
+						header fields en media types.
+					</p>
+				</div>
+
 			</div>
 
-		</div>
+			<div id="content2" class="section">
+				<div class="inner">
 
-		<div id= "s2" class="section">
-			<div class="inner">
-
-				<h2>Ontstaan van MIME</h2>
-				<p>Mail berichten waarin alleen tekst aanwezig was werd in RFC
-					822 al in 1982 gedefinieerd<a href="http://tools.ietf.org/html/rfc822" class="tiny">[1]</a>.
-					Het succes van dit standaard was zo
-					groot dat dit standaard, geheel of deels, is overgenomen, ver
-					buiten de grenzen van het internet en het internet SMTP vervoer (
-					toentertijd in RFC821 gedefinieerd en vandaag de dag in RFC5321<a href="http://tools.ietf.org/html/rfc5321" class="tiny">[2]</a>).
-					Door de grote hoeveelheid mensen die deze standaard gebruikte
-					werden de beperkingen die het bezat steeds restrictiever voor de
-					gebruiker.<a href="http://email.about.com/cs/standards/a/mime.htm" class="tiny">[3]</a></p>
-				<p>RFC 822 was bedoelt om een formaat van tekst bericht te
-					specificeren. Zelf al was het bericht een non-tekst bericht zoals
-					video berichten, audio berichten en afbeeldingen, kon de gebruiker
-					geen andere tekens gebruiker dan de tekens die US-ASCII tekst
-					bevatte. De tekens die US-ASCII bevat zijn de kleine letters a tot
-					en met z, grote letters A tot en met Z, de getallen 0 tot en met 9
-					en 19 leestekens waaronder %, +, . en “. Aangezien er geen
-					mechanisme was beschreven voor mail berichten die audio, video,
-					Aziatische tekens of tekens uit meerdere Europese talen was er een
-					behoefte aan extra specificaties.</p>
-				<p>Één van de meest duidelijk merkbare limitatie’s van mail
-					systemen die gebaseerd waren op RFC 821/822 was het feit dat de
-					inhoud van het mailbericht werd beperkt dor relatief korte
-					lijnen(1000 tekens of minder) van 7bit US-ASCII. Dit betekent dat
-					alle berichten die een gebruiker wilde versturen wat geen tekst
-					berichten was (video, audio, afbeelding) omgezet moesten worden
-					naar 7bit bytes die gerepresenteerd konden worden als US-ASCII
-					tekst voordat de gebruiker zijn lokale mail UA ( User Agent, een
-					programma waarmee de gebruiker mail kan ontvangen en versturen).</p>
-				<p>De beperkingen van RFC 822 werden nog duidelijker doordat
-					gateways ingesteld waren om mail berichten tussen RFC 822 en X.400
-					hosts toe te laten. X.400 specifieert mechanismen voor het aanwezig
-					zijn van non-tekst onderdelen in een mail bericht. De standaarden
-					die op dat moment gebruikt werden voor het versturen van berichten
-					van X.400 bericht naar een RFC 822 bericht gaven aan dat de
-					afbeelding geconverteerd moesten worden naar tekst of dat het
-					non-tekst object weggelaten moest worden en tegen de ontvanger
-					zeggen dat er informatie was weggelaten. Dit is natuurlijk
-					ongewenst als de gebruiker graag het toegevoegde bestand wilde
-					ontvangen. Zelfs als de user agent de afbeelding niet kan
-					converteren kon de gebruiker misschien met externe programma’s om
-					deze taak te volbrengen. MIME bracht hier een verandering in door
-					de meeste problemen die het RFC 822 had op te lossen zonder
-					serieuze onverenigbaarheden toe te voegen aan de bestaande RFC 822
-					mail wereld.</p>
+					<h2>Ontstaan van MIME</h2>
+					<p>
+						Mail berichten waarin alleen tekst aanwezig was werd in RFC 822 al
+						in 1982 gedefinieerd<a href="http://tools.ietf.org/html/rfc822"
+							class="tiny">[1]</a>. Het succes van dit standaard was zo groot
+						dat dit standaard, geheel of deels, is overgenomen, ver buiten de
+						grenzen van het internet en het internet SMTP vervoer (
+						toentertijd in RFC821 gedefinieerd en vandaag de dag in RFC5321<a
+							href="http://tools.ietf.org/html/rfc5321" class="tiny">[2]</a>).
+						Door de grote hoeveelheid mensen die deze standaard gebruikte
+						werden de beperkingen die het bezat steeds restrictiever voor de
+						gebruiker.<a href="http://email.about.com/cs/standards/a/mime.htm"
+							class="tiny">[3]</a>
+					</p>
+					<p>RFC 822 was bedoelt om een formaat van tekst bericht te
+						specificeren. Zelf al was het bericht een non-tekst bericht zoals
+						video berichten, audio berichten en afbeeldingen, kon de gebruiker
+						geen andere tekens gebruiker dan de tekens die US-ASCII tekst
+						bevatte. De tekens die US-ASCII bevat zijn de kleine letters a tot
+						en met z, grote letters A tot en met Z, de getallen 0 tot en met 9
+						en 19 leestekens waaronder %, +, . en “. Aangezien er geen
+						mechanisme was beschreven voor mail berichten die audio, video,
+						Aziatische tekens of tekens uit meerdere Europese talen was er een
+						behoefte aan extra specificaties.</p>
+					<p>Één van de meest duidelijk merkbare limitatie’s van mail
+						systemen die gebaseerd waren op RFC 821/822 was het feit dat de
+						inhoud van het mailbericht werd beperkt dor relatief korte
+						lijnen(1000 tekens of minder) van 7bit US-ASCII. Dit betekent dat
+						alle berichten die een gebruiker wilde versturen wat geen tekst
+						berichten was (video, audio, afbeelding) omgezet moesten worden
+						naar 7bit bytes die gerepresenteerd konden worden als US-ASCII
+						tekst voordat de gebruiker zijn lokale mail UA ( User Agent, een
+						programma waarmee de gebruiker mail kan ontvangen en versturen).</p>
+					<p>De beperkingen van RFC 822 werden nog duidelijker doordat
+						gateways ingesteld waren om mail berichten tussen RFC 822 en X.400
+						hosts toe te laten. X.400 specifieert mechanismen voor het
+						aanwezig zijn van non-tekst onderdelen in een mail bericht. De
+						standaarden die op dat moment gebruikt werden voor het versturen
+						van berichten van X.400 bericht naar een RFC 822 bericht gaven aan
+						dat de afbeelding geconverteerd moesten worden naar tekst of dat
+						het non-tekst object weggelaten moest worden en tegen de ontvanger
+						zeggen dat er informatie was weggelaten. Dit is natuurlijk
+						ongewenst als de gebruiker graag het toegevoegde bestand wilde
+						ontvangen. Zelfs als de user agent de afbeelding niet kan
+						converteren kon de gebruiker misschien met externe programma’s om
+						deze taak te volbrengen. MIME bracht hier een verandering in door
+						de meeste problemen die het RFC 822 had op te lossen zonder
+						serieuze onverenigbaarheden toe te voegen aan de bestaande RFC 822
+						mail wereld.</p>
+				</div>
 			</div>
-
 		</div>
-
-	
-
-		</div>
-		<div id= "sref" class="section">
-			<div class="inner">
-			</div>
+		<div id="sref" class="section">
+			<div class="inner"></div>
 
 		</div>
 	</div>
 	</div>
 
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push([ '_setAccount', 'UA-9804757-1' ]);
-			_gaq.push([ '_trackPageview' ]);
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-9804757-1' ]);
+		_gaq.push([ '_trackPageview' ]);
 
-			(function() {
-				var ga = document.createElement('script');
-				ga.type = 'text/javascript';
-				ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-						: 'http://www')
-						+ '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(ga, s);
-			})();
-			
-		
-		</script>
-		
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
 
 </body>
 </html>
