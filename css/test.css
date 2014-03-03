@@ -268,6 +268,7 @@ color:blue;
 
 
 #content2 {
+	float:top;
 	min-height: 500px;
 	background: #504f4f;
 }
