@@ -41,11 +41,6 @@ color:white;
 text-decoration: none; 
 }
 
-/*a:hover{
-text-decoration: underline;
-color:blue;
-}*/
-
 .tiny{
 	position:relative;
 	top: -1ex;
@@ -79,9 +74,6 @@ color:blue;
 	left: 10px;
 }
 
-.active {
-	background: #0099CC;
-}
 .clear {
 	clear: both;
 }
@@ -158,10 +150,10 @@ color:blue;
 .subsubMenu{
 	position: relative;
 	top: 0px;
-	left:100px;
+	
 	height: 60px;
 	z-index: 1000;
-	width:960px;
+	width:100%;
 	background: #0286b2;	
 }
 
