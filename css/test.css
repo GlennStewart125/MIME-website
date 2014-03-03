@@ -1,6 +1,8 @@
 * {margin: 0; padding: 0; outline: 0;}
 
 
+
+
 body {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
@@ -62,6 +64,7 @@ text-decoration: none;
 .blue-link{
 color:blue;
 }
+
 
 .menuBtn {
 	background: center center no-repeat transparent;
@@ -150,7 +153,6 @@ color:blue;
 .subsubMenu{
 	position: relative;
 	top: 0px;
-	
 	height: 60px;
 	z-index: 1000;
 	width:100%;
@@ -261,6 +263,7 @@ color:blue;
 
 
 #s1 {
+	top:120px;
 	min-height: 500px;
 	background: #3f3f3f;
 }
