@@ -19,12 +19,13 @@
 <script src="js/clickandscroll.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 <!--[if lte IE 8]><script type="text/javascript" language="javascript" src="excanvas.min.js"></script><![endif]-->
-<!--<script type="text/javascript" language="javascript" src="js/jquery.flot.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.flot.js"></script>
+<script type="text/javascript" language="javascript" src="js/excanvas.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.flot.orderBars.js"></script>
-<script type="text/javascript" language="javascript" src="js/jquery.flot.axislabels.js"></script>-->
+<script type="text/javascript" language="javascript" src="js/jquery.flot.axislabels.js"></script>
 
 </head>
-<body> scroll
+<body> 
 	<div class="wrap">
 
 		<div class="subMenu">
@@ -161,13 +162,51 @@
 					“application/octet-stream”. De “application” media type wordt
 					gebruikt voor discrete data die in geen één van de andere
 					categorieën passen en in het bijzonder voor gegevens die verwerk
-					moeten worden door een soort software. Dit si informatie die pas
+					moeten worden door een soort software. Dit is informatie die pas
 					zichtbaar of bruikbaar wordt voor de gebruiker nadat het verwerkt
 					is door de applicatie. Voorbeelden van applicaties waarvoor deze
 					media type gebruikt voor kan worden is bestandoverdracht,
 					spreadsheets, data voor mail gebaseerde agenda systemen. “Model”<a href="http://tools.ietf.org/html/rfc2077" class="tiny">[4]</a>
 					wordt gebruikt voor het versturen van modellen. Modellen zijn
-					multidimensionale structuren die uit één of meer objecten bestaan.
+					multidimensionale structuren die uit één of meer objecten bestaan. Zowel de discrete media types als het Model media type 
+					hebben sinds het uibrengen van MIME, en voor model sinds de uitkomst van model, een duidelijke toename van aantal subtypes gehad, het verschil in aantal
+					subtypes zijn in de grafieken hieronder weergegeven en is duidelijk zichtbaar.
+					<div id="pl-gegevens" class="hidden">
+					<ul>
+					
+					<!-- Discreet- In het begin-->
+						<li>1</li><!-- text-->
+						<li>2</li><!-- image-->
+						<li>1</li><!-- audio-->
+						<li>1</li><!-- video-->
+						<li>2</li><!-- application-->
+						
+						<!--Discreet-Nu-->
+						<li>67</li><!-- text-->
+						<li>45</li><!-- image-->
+						<li>140</li><!-- audio-->
+						<li>76</li><!-- video-->
+						<li>1050</li><!-- application-->
+						
+						<!-- M&M- In het begin-->
+						<li>4</li><!-- multipart-->
+						<li>3</li><!-- message-->
+						
+						<!--M&M-Nu-->
+						<li>14</li><!-- multipart-->
+						<li>21</li><!-- message-->
+						
+						<!-- model- In het begin-->
+						<li>0</li><!-- model-->
+						
+						<!--model-Nu-->
+						<li>17</li><!-- model-->
+					</ul>
+					
+					</div>
+					<div id="placeholder1"></div>
+				</p>
+				<p><div id="placeholder3"></div>
 				</p>
 			</div>
 
@@ -203,7 +242,9 @@
 					kapselen. Sub typen van “message” leggen vaak restricties op aan de
 					coderingen die gebruikt mogen worden. De beperking die opgelegd
 					wordt hangt af van het sub type en worden daarom in samenhang
-					beschreven.</p>
+					beschreven. Ook Multipart en Message hebben een toename van subtypes meegemaakt, dat hieronder wordt weergegeven.
+					<div id="placeholder2"></div>
+					</p>
 			</div>
 
 		</div>
@@ -232,6 +273,7 @@
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(ga, s);
 			})();
+
 		</script>
 		
 

@@ -270,19 +270,19 @@ color:blue;
 
 #s1 {
 	min-height: 500px;
-	background: #2e2e2e;
+	background: #3f3f3f;
 }
 
 
 #s2 {
 	min-height: 500px;
-	background: #3f3f3f;
+	background: #504f4f;
 }
 
 
 #s3 {
 	min-height: 500px;
-	background: #504f4f;
+	background: #2e2e2e;
 }
 
 
@@ -308,17 +308,21 @@ background: #2e2e2e;
 
 }
 
-
-
-
+#pl-gegevens.hidden{
+display:none;
+}
 
 body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
 
-#placeholder { width: 500px; height: 600px; position: relative; margin: 0 auto; }
+#placeholder1 { width: 500px; height: 500px; position: relative; margin: 0 auto; background-color: #FFF }
+
+#placeholder2 { width: 500px; height: 500px; position: relative; margin: 0 auto; background-color: #FFF }
+
+#placeholder3 { width: 500px; height: 500px; position: relative; margin: 0 auto; background-color: #FFF }
 
 .legend table, .legend > div { height: 82px !important; opacity: 1 !important; right: -55px; top: 10px; width: 116px !important; }
 
-.legend table { border: 1px solid #FFFFFF; padding: 5px; }
+.legend table { border: 1px solid #555; padding: 5px; }
 
 #flot-tooltip { font-size: 12px; font-family: Verdana, Arial, sans-serif; position: absolute; display: none; border: 2px solid; padding: 2px; background-color: #FFF; opacity: 0.8; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
 
